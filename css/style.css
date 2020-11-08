@@ -1,0 +1,474 @@
+.header{
+    display: flex;
+    /* space-aroundは左右両端のスペースを埋めずに等間隔に配置。space-betweenはスペースを埋めて等間隔に配置 */
+    justify-content: space-around;  
+    /* 交差軸方向 (縦方向) のどこに位置させるか。簡単に言うとstartなら上側、endなら下側 */
+    align-items: center;
+}
+
+
+
+.headerbox{
+    display: flex;
+    /* 左端に寄せる */
+    justify-content: flex-end;
+}
+
+.headerbox a{
+    margin-left: 50px;
+    font-size: 21px;
+}
+
+
+
+
+
+.main{
+    /* 背景画像にはこの4つが基本的に必要 */
+    background-image: url(../img/mainbg.png); 
+    background-position: center;
+    /* cover: 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+    background-size: cover;
+    /* 背景画像を一回だけ表示して繰り返さない */
+    background-repeat: no-repeat;
+
+
+    height: 515px;
+    text-align: center;
+  
+}
+
+
+
+.main1{
+    font-size: 50px;
+    /* フォントを太字にする */
+    font-weight: bold;
+    padding-top: 200px;
+    color: white;
+}
+
+.main2{
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 200px;
+    color: white;
+}
+
+.about{
+    text-align: center;
+}
+
+.about h3{
+    padding-top: 60px;
+    font-size: 24px;
+    color: yellowgreen;
+}
+
+.about h4{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    font-size: 18px;
+}
+
+.about p{
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+.gazou{
+    display: flex;
+    padding-top: 40px;
+    width: 705px;
+}
+
+.gazou img{
+    width: 50%;
+}
+
+.course{
+    text-align: center;
+}
+
+.course p{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.course h3{
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+.table{
+    background-color: #fafafa;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+
+    /* セル間の余白をなくす2つ */
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.table h3{
+    padding-top: 120px;
+    padding-bottom: 40px;
+    font-size: 18px;
+}
+
+.table22{
+    padding-left: 50px;
+    padding-right: 170px;
+    padding-bottom: 120px;
+    font-size: 16px;
+}
+
+.table33{
+    padding-right: 50px;
+    padding-left: 170px;
+    padding-bottom: 120px;
+    font-size: 16px;
+}
+
+.table44{
+    padding-left: 50px;
+    padding-right: 170px;
+    padding-bottom: 120px;
+    font-size: 16px;
+}
+
+.news{
+    text-align: center;
+}
+
+.news h3{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    color: yellowgreen;
+}
+
+.newsgazou{
+    display: flex;
+    /* フレックスボックスを使用したものの位置を決める */
+    justify-content: center;
+    text-align: left;
+    font-size: 16px;
+}
+
+.news1{
+    display: flex;
+    /* フレックスボックス　縦に並べる */
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding-right: 30px;
+    display: inline-block;
+
+    /* hoverアクションに必要な要素　ここから */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.news1:hover {
+    opacity: 0.6;
+  }
+/* hoverアクションに必要な要素　ここまで */
+
+.news2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding-right: 30px;
+
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.news2:hover {
+    opacity: 0.6;
+  }
+
+.news3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.news3:hover {
+    opacity: 0.6;
+  }
+
+.newsgazou p{
+    padding-top: 30px;
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 300px;
+    padding-bottom: 24px;
+}
+
+.more{
+    width: 300px;
+    height: 60px;
+    background-color: tomato;
+    text-align: center;
+    margin: 0 auto;
+    
+
+
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.more:hover {
+    opacity: 0.6;
+  }
+
+.more p{
+    color: #fff;
+  background-size: 300px 60px;
+  font-size: 18px;
+  display: inline-block;
+
+}
+
+.yohaku_more{
+    padding-bottom: 140px;
+}
+
+.access{
+    
+    background-color: #fafafa;
+    text-align: center;
+    
+}
+
+.access h3{
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+.access p{
+    padding-top: 30px;
+}
+
+.access iframe{
+    padding-top: 60px;
+}
+
+.access table{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-spacing: 20px 30px;
+    height: 50px;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact h3{
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+.contact1{
+    padding-top: 30px;
+}
+
+.contact2{
+    padding-top: 60px;
+}
+
+.contact3{
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+
+/* セレクトボックス */
+.selectbox{
+    overflow: hidden;
+    width: 90%;
+	margin: 2em auto;
+	text-align: center;
+}
+
+
+.form{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.form td{
+    border-width: 2px 0px;
+    border-color: #bfbfbf;
+    border-style: solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    border-left: 1px solid #bfbfbf ;
+    width: 500px;
+}
+
+.form th{
+    border-width: 2px 0px;
+    border-color: #bfbfbf;
+    border-style: solid;
+    padding-left: 16px;
+    padding-right: 64px;
+    width: 200px;
+}
+
+.form option select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.form option select::-ms-expand {
+    display: none;
+}
+
+.form option{
+    position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+
+.form option ::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+    pointer-events: none;
+}
+
+.form1{
+    padding-left: 16px;
+}
+
+.doki{
+    padding-bottom: 24px;
+}
+
+.shosai{
+    vertical-align: top;
+}
+
+.okuru{
+    width: 300px;
+    height: 60px;
+    background-color: tomato;
+    text-align: center;
+    margin: 0 auto;
+
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.okuru:hover {
+    opacity: 0.6;
+  }
+
+.okuru p{
+  color: #fff;
+  background-size: 300px 60px;
+  font-size: 18px;
+  display: inline-block;
+  padding-bottom: 60px;
+}
+
+.yohaku{
+    padding-bottom: 140px;
+}
+
+.footer{
+    background-color: #707070;
+
+    text-align: center;
+    color: white;
+}
+
+.footer p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.shosai{
+    width:326px;
+    height:200px;
+}
+
+/* 上へジャンプボタンの作成　ここから */
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #3f98ef;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  /* 上へジャンプボタンの作成　ここまで */
